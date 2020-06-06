@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <div id="header">
+        
+        <div id="logo">
+        
+        <span>JQuery</span> Code Player
+            
+        </div>
+        
+        <div id="buttonContainer">
+            
+            <div class="toggleButton active" id="html">HTML</div>
+            
+            <div class="toggleButton" id="css">CSS</div>
+            
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            
+            <div class="toggleButton active" id="output">Output</div>
+        
+        </div>
+    
+    </div>
+    
+    <div id="bodyContainer">
+    
+        <textarea id="htmlPanel" class="panel"><p id="paragraph">Text here</p></textarea>
+        
+        <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+        
+        <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Goran!";</textarea>
+        
+        <iframe id="outputPanel" class="panel"></iframe>
+    
+    
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

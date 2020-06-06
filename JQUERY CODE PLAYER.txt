@@ -1,0 +1,58 @@
+1.First I style html 
+2.I create logo, in div header,
+3.and then div of buttons 4 of them for html css js and output
+note: I make sure class name is similar to js variable cause othervise it wont 
+work.. example : toggle-button wont work, and toggleButton will work.
+4.Each button goes by id of html, css, js, and output
+5.Then I style everything in CSS to look nice and neat
+6.Instead of hovering buttons in CSS I will practice in JQuery
+7.Which means $("").hover(function ()...
+$(this).css("highlightedButton").
+8.api.jquery.com is a site for jquery documentation, we can find over there
+hover events and much more.
+9.Then we apply in HTML class of active to buton of output and html
+10.Then style active in CSS
+11.We create class in CSS and then we addClass("") we toggle class we created in CSS
+12.And when we hover over we wont to removeClass("").
+13.Also when something is clicked we want to toggle class of active so what we
+click turns into active color.
+14.Also we would remove css class we created by remove so there is only color
+of active we styled left.
+15.Now we must create html and output area's first we create area div
+16.For html we can use textarea, style it in CSS
+17.We can use $(window).height() - $("#header").height())
+for textarea width and height, we also dont wont it resizable, so we can use in css
+resize: none;
+18.Now we add our output but this time we use iframe, we will use same name so 
+we easier display them example: outputPanel, or htmlPanel, also will add class
+for each of lets say "panel" so we can style all of them in CSS
+19.To style them in JS to float nicely we can do same as before but this time with
+width 
+$(".panel").width(($(window).width() / 2)
+20.Now we need to change HTML of an iFrame with Jquery, we can look for asnwer on
+stackoverflow
+example code: $("iframe").contents().find("html").html($("#htmlPanel).val());
+now it updates from htmlPanel that we created in HTML
+21.Now we need event that updates text we change in textarea and example is:
+$("textarea").on("change keyup paste", function() {
+and when that happens we want this from above update 
+      $("iframe").contents().find("html").html($("#htmlPanel).val());
+}
+22.Now all we got to do is css panel and javascript panel, we want that hidden so
+we add class and style in CSS display:none
+23.To get atribute that is clicked we would use $(this).attr("") + "Panel"
+24.Then we count elements with number of classes, so if we add hidden we can count
+numbers that are hidden.
+25.We can google jquery counting elments with a class, so if use something like
+$(".yourclass").length here you can see how jquery is easy
+26.Then we create variable of active panels 
+example : let numberOfActivePanels = 4 - $(".hidden").length;
+27.Manually put our html to style our javascript 
+28.Create function updateOutput and that would just do output, and we can call it
+anywhere.
+29.Run string as javascript with eval function with an iframe
+30.And then javascript can update text instead of alerting it we do this by
+document.getElementById("p").innerHTML = "HELLO LJUDI";
+
+
+
